@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-rose-100">
+    <header class="d-flex justify-content-between mx-3 mt-4">
+      <h3>Killian VANHOVE</h3>
+      <nav>
+        <a href="./index.html" class="px-3 text-decoration-none">Portfolio</a>
+        <a href="./contact.html" class="px-3 text-decoration-none">Contact</a>
+        <a href="./hobby.html" class="px-3 text-decoration-none">Hobby</a>
+      </nav>
+    </header>
+
+    <main class="min-vh-100">
+      <h1 class="text-center my-5">Me contacter</h1>
+
+      <form action="https://httpbin.org/post" method="post" class="container">
+        <div class="mb-3">
+          <label for="email" class="form-label">*Mail :</label>
+          <input
+            value="killian2908@gmail.com"
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="lastname" class="form-label">*Nom :</label>
+          <input
+            value="VANHOVE"
+            type="text"
+            id="lastname"
+            name="lastname"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="firstname" class="form-label">*Prénom :</label>
+          <input
+            value="killian"
+            type="text"
+            id="firstname"
+            name="firstname"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Téléphone :</label>
+          <input
+            value=""
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message :</label>
+          <textarea
+            name="message"
+            id="message"
+            class="form-control"
+          ></textarea>
+        </div>
+        <p>Les champs précéder d'un * sont obligatoire</p>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
